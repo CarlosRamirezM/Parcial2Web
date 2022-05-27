@@ -29,7 +29,9 @@ function DetailSpace(props) {
   return (
     <div className="row">
       <div className={selectedRoom? "col-8" : "col-12"}>
+        <div className="row">
         {list.map(r => r.homeId === props.detail.id? (<div className="col-3" onClick={()=> setSelectedRoom(r)}> <DetailRoom room={r}/> </div>): "")}          
+        </div>
       </div>
       {selectedRoom? 
       (<div className="col-4">
