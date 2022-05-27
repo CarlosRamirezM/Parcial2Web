@@ -37,7 +37,7 @@ function DetailSpace(props) {
           <thead> 
             <tr>
               <th scope="col">#</th>
-              <th scope="col"><FormattedMessage id="tableId"/></th>
+              <th scope="col">Id</th>
               <th scope="col">Device </th>
               <th scope="col">Value</th>
             </tr>

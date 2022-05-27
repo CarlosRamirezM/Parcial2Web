@@ -30,7 +30,7 @@ function Spaces() {
   return (
     <div>
       <div className="row">
-        <h5><FormattedMessage id="MySpaces"/></h5>
+        <h5>My Spaces</h5>
         {spaces.map((s) => (
           <div className="col-3" onClick={() => setSelectedSpace(s)}> 
               <Space space={s}/>
@@ -38,6 +38,7 @@ function Spaces() {
         ))}
       </div>
       <div>
+        <h5>My Rooms</h5>
             {selectedSpace? <DetailSpace detail={selectedSpace}/>: ""}
       </div>
     </div>
